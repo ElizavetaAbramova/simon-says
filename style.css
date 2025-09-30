@@ -1,0 +1,158 @@
+body {
+  width: calc(100vw - 17px);
+  height: calc(100vh - 17px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lucida Console', monospace;
+  font-size: 20px;
+}
+
+.main {
+  width: 700px;
+  max-height: 100vh;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.button {
+  border: 2px solid rgb(165, 164, 164);
+  background-color: rgb(226, 223, 220);
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px 10px;
+  transition: 0.5s;
+}
+
+.levelBlock {
+  margin: 0 0 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.level-button {
+  flex-grow: 1;
+  cursor: pointer;
+  padding: 10px;
+  max-width: 200px;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.control-buttons > * {
+  padding: 10px 15px;
+}
+
+.round,
+.text-line {
+  margin: auto;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.text-line {
+  width: 80%;
+  height: 30px;
+  text-align: center;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.keyboard-block {
+  display: flex;
+  margin: 20px auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.keyboard {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.key-button {
+  min-width: 30px;
+  height: 20px;
+  margin: 5px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.message-block {
+  height: 40px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+}
+
+.success-message {
+  color: green;
+  text-align: center;
+}
+
+.start-button {
+  width: 100%;
+  height: 30px;
+  margin: 10px 0 0 0;
+  padding: 15px 0 5px 0;
+  background-color: #FF4040;
+  border-color: #fc3737;
+  color: white;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.active {
+  background-color: #008500;
+  border-color: #008500;
+  color: white;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.hidden {
+  display: none;
+}
+
+.disabled {
+  cursor: not-allowed;
+  background-color: rgb(162, 162, 162);
+}
+
+.show-button {
+  background-color: #FF4040;
+  transition: 0.3s;
+}
+
+@media (pointer: fine) {
+
+  .active:hover {
+    background-color: #008500;
+    cursor: default;
+  }
+
+  .start-button:hover {
+    cursor: pointer;
+    background-color: #c50c0c;
+  }
+
+  .control-buttons > *:hover {
+    background-color: rgb(165, 164, 164);
+  }
+}
