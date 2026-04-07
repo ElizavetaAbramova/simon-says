@@ -4,6 +4,7 @@ export const keyboardEASY = createElementWithClass(
   "div",
   "keyboard-easy keyboard",
 );
+
 export const keyboardMEDIUM = createElementWithClass(
   "div",
   "keyboard-medium keyboard hidden",
@@ -34,6 +35,6 @@ export function createMediumKeyboard() {
 document.onload = createEasyKeyboard();
 
 export const keyboardBlock = createElementWithClass("div", "keyboard-block");
-keyboardBlock.append(keyboardEASY, keyboardMEDIUM);
+keyboardBlock.append(keyboardMEDIUM, keyboardEASY);
 
 export const allKeyboardButtons = document.getElementsByClassName("key-button");
