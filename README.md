@@ -8,5 +8,5 @@ The goal is to correctly reproduce the sequence five times in a row to win.
 
 There are three difficulty levels: easy, medium, and hard. The only difference between them is the set of symbols used.
 
-![Start of the game](image-1.png)
-![Game in progress](image.png)
+![Start of the game](./images/gameImg_1.png)
+![Game in progress](./images/gameImg.png)
