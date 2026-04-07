@@ -1,13 +1,11 @@
 import { setState, state } from "../script.js";
+import { easyButton, hardButton, mediumButton } from "./levelButtons.js";
 import {
-  easyButton,
-  hardButton,
-  mediumButton,
-  newGameButton,
   nextButton,
   repeatSequenceButton,
+  newGameButton,
   startButton,
-} from "./levelButtons.js";
+} from "./controlButtons.js";
 import { createSequence } from "./createSequence.js";
 import {
   keyboardEASY,

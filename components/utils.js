@@ -1,5 +1,5 @@
 import { setState, state } from "../script.js";
-import { nextButton, repeatSequenceButton } from "./levelButtons.js";
+import { nextButton, repeatSequenceButton } from "./controlButtons.js";
 import { inputFromKeyboard, virtualKeyboardHandler } from "./handlers.js";
 import { allKeyboardButtons } from "./keyboards.js";
 import { errorMessage, successMessage } from "./pageElements.js";
